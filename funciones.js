@@ -4,26 +4,28 @@ function celsius(degrees) {
 }
 
 
-var degressFahrenheit = [60, 32, 100]; var degreesCelsius = []; var contador;
+var degreesFahrenheit = [60, 32, 100]; var degreesCelsius = []; var contador;
 
 
 
 function b() {
     for (contador = 2; contador >= 0; contador--) {
-        document.write("Valor " + contador + " es " + degreesFarhrenheit[contador] + ' Farhrenheit ');
+        document.write("Valor " + contador + " es " + degreesFahrenheit[contador] + ' Farhrenheit ');
 
-        document.write(" el cual es " + degrees_celsius[contador] +
-            " C");
+        document.write(" el cual es " + degreesCelsius[contador] +
+            " Celsius");
 
-        fc(dc[contador])
+        fahrenheitCalculation(degreesCelsius[contador])
     }
 }
 
-function a() {
-    for (contador = 0; contador <= 2; contador++) { dc[contador] = celsius(degreesFarhrenheit[contador]); }
+function array() {
+    for (contador = 0; contador <= 2; contador++) {
+        degreesCelsius[contador] = celsius(degreesFahrenheit[contador]);
+    }
 }
 
-function farhrenheitCalculation(aux) {
+function fahrenheitCalculation(aux) {
     if (aux > 25) {
         document.write('Hace calor <br />');
     } else
